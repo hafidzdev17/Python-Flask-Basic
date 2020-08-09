@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Project With Flask Python</title>
+</head>
+<body>
+
+<h1> Hello World </h1>
+
+<div class="gambar">
+    <img src={{url_for('static',filename="cat.jpg") }} height="400px" width="400px">
+</div>
+
+<ul>
+    {% for fruit in fruits %}
+    <li> {{fruit}} </li>
+    {% endfor %}
+</ul>
+    {% if 'Mango' in fruits %}
+    <p> Mango exists in the list </p>
+    {% else %}
+    <p> Mango does not exists in the list </p>
+    {% endif %}
+</body>
+</html>
